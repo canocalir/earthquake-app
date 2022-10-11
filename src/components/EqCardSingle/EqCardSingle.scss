@@ -1,6 +1,87 @@
-.single-eq-card{
-    background-color: aqua;
-    width: 200px;
-    height: 300px;
-    padding: 2rem;
+.eq-card-container {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.eq-card {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  align-items: center;
+  height: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  .eq-card {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: flex-start;
+    height: 15rem;
+    .mag-container {
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+    }
+    .eq-details {
+        height: 10rem;
+      display: flex;
+    }
+  }
+}
+
+.eq-details {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.magnitude {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  left: 0;
+}
+
+.mag-span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mag-container {
+  position: relative;
+  height: 100%;
+  width: 24%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.city-container p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+p {
+  padding-left: 3rem;
 }

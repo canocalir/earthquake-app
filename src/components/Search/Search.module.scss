@@ -1,0 +1,17 @@
+.searchContainer{
+    background-color: aquamarine;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchInput{
+    background-color: rgb(255, 255, 255);
+    height: 2.6rem;
+    width: 20rem;
+    border-radius: 1rem;
+    border: none;
+    padding-left: 1rem;
+    font-size: 1rem;
+}

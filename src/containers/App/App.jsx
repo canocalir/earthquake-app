@@ -1,8 +1,12 @@
+import Search from '../../components/Search/Search';
 import EqCards from '../EqCards/EqCards';
 import Navbar from '../Navbar/Navbar'
 import './App.css';
 
 function App() {
+
+
+
   return (
     <div className="App">
       <Navbar/>
