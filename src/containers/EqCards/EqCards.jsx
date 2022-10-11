@@ -40,7 +40,9 @@ const EqCards = () => {
 
   return (
     <>
-    <Search data={data} setFiltered={setFiltered}/>
+    <Search 
+    data={data} 
+    setFiltered={setFiltered}/>
     <div className='eqcards'>
         {loading ? <Loader/> : result}
     </div>

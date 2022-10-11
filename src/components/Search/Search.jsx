@@ -3,9 +3,11 @@ import searchStyle from './Search.module.scss'
 const Search = ({ data, setFiltered }) => {
 
     const onChangeHandler = (e) => {
+
         let filtered = data.filter((fdata) => (
-            fdata.city.slice(1,-1).toLowerCase().indexOf(e.target.value) > -1))
-         setFiltered(filtered)
+           fdata.city.toLowerCase().slice(1,-1).indexOf(e.target.value.toLowerCase()) > -1 ))  
+
+            setFiltered(filtered)
     }
   return (
     <div className={searchStyle.searchContainer}>
