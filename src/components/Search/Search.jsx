@@ -5,8 +5,7 @@ const Search = ({ data, setFiltered }) => {
     const onChangeHandler = (e) => {
 
         let filtered = data.filter((fdata) => (
-           fdata.city.toLowerCase().slice(1,-1).indexOf(e.target.value.toLowerCase()) > -1 ))  
-
+           fdata.city.toLowerCase().slice(1,-1).indexOf(e.target.value.toLowerCase()) > -1 ))
             setFiltered(filtered)
     }
   return (

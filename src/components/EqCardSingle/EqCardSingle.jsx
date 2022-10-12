@@ -49,7 +49,7 @@ const EqCardSingle = ({
             {magnitude}
           </p>
           <div className={eqCardSingleStyle.cityContainer}>
-            <p>{city.slice(1, -1)}</p>
+            <p>{!city ? 'NO CITY' : city.slice(1, -1)}</p>
           </div>
         </div>
         <div className={eqCardSingleStyle.eqDetails}>

@@ -5,3 +5,14 @@
     padding: 2rem;
     gap: 2rem;
 }
+
+.errorNotification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgba(70, 17, 119, 0.61);
+}
