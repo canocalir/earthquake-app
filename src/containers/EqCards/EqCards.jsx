@@ -8,7 +8,7 @@ import eqCards from "./EqCards.module.scss";
 const EqCards = () => {
   const isLoading = useRef(true);
   const url = process.env.REACT_APP_URL;
-  const { data, loading, error } = useFetch(url, isLoading, []);
+  const { data, loading } = useFetch(url, isLoading, []);
 
   const [filtered, setFiltered] = useState();
 
