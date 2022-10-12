@@ -14,7 +14,7 @@ const Search = ({ data, setFiltered }) => {
         <input
         onChange={onChangeHandler} 
         className={searchStyle.searchInput} type="text" 
-        placeholder='Enter a City' />
+        placeholder='Start writing a city name...' />
     </div>
   )
 }

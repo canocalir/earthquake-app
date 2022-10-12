@@ -3,7 +3,7 @@ import EqCardSingle from '../../components/EqCardSingle/EqCardSingle'
 import Loader from '../../components/Loader/Loader';
 import Search from '../../components/Search/Search';
 import { useFetch } from '../../hooks/useFetch/useFetch'
-import './EqCards.scss'
+import eqCards from './EqCards.module.scss'
 
 const EqCards = () => {
   const isLoading = useRef(true);
@@ -43,7 +43,7 @@ const EqCards = () => {
     <Search 
     data={data} 
     setFiltered={setFiltered}/>
-    <div className='eqcards'>
+    <div className={eqCards.eqcards}>
         {loading ? <Loader/> : result}
     </div>
     </>

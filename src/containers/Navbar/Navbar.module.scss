@@ -1,0 +1,19 @@
+@import '../../helpers/variables';
+
+.navbar{
+    height: 10rem;
+    background: url('../../assets/images/quake3.jpg');
+    background-size:contain;
+    color: $navbarFontColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $smallFontSize;
+    .navbarHeading{
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        backdrop-filter: blur(5px);
+    }
+}

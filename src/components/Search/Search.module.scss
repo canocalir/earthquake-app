@@ -1,17 +1,21 @@
+@import '../../helpers/variables';
+
 .searchContainer{
-    background-color: aquamarine;
-    height: 10vh;
+    height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: $searchBackgroundColor;
+    padding: 2rem;
 }
 
 .searchInput{
-    background-color: rgb(255, 255, 255);
-    height: 2.6rem;
-    width: 20rem;
+    background-color: $searchInputBackgroundColor;
+    height: 3rem;
+    width: 30rem;
     border-radius: 1rem;
     border: none;
     padding-left: 1rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    box-shadow: $searchInputShadow;
 }
