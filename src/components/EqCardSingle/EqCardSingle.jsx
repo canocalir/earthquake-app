@@ -11,22 +11,22 @@ const EqCardSingle = ({
   latitude,
   longitude,
   depth,
-  magnitude,
+  intensity,
   city,
 }) => {
   let magColorStyle = {};
 
   const [openMap, setOpenMap] = useState(false);
 
-  if (Number(magnitude) <= 2) {
+  if (Number(intensity) <= 2) {
     magColorStyle = {
       backgroundColor: "green",
     };
-  } else if (Number(magnitude) <= 3) {
+  } else if (Number(intensity) <= 3) {
     magColorStyle = {
       backgroundColor: "#ffb703",
     };
-  } else if (Number(magnitude) <= 4) {
+  } else if (Number(intensity) <= 4) {
     magColorStyle = {
       backgroundColor: "#ff831d",
     };
@@ -44,9 +44,9 @@ const EqCardSingle = ({
     <div className={eqCardSingleStyle.eqCardContainer}>
       <div className={eqCardSingleStyle.eqCard}>
         <div style={magColorStyle} className={eqCardSingleStyle.magContainer}>
-          <p className={eqCardSingleStyle.magnitude}>
+          <p className={eqCardSingleStyle.intensity}>
             <span className={eqCardSingleStyle.magSpan}>Mag</span>
-            {magnitude}
+            {intensity}
           </p>
           <div className={eqCardSingleStyle.cityContainer}>
             <p>{!city ? 'NO CITY' : city.slice(1, -1)}</p>

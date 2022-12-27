@@ -21,8 +21,8 @@ const EqCards = () => {
           latitude={eq.latitude}
           longitude={eq.longitude}
           depth={eq.depth}
-          magnitude={eq.magnitude}
-          place={eq.place}
+          intensity={eq.intensity}
+          region={eq.region}
           key={id}
         />
       ))
@@ -34,8 +34,8 @@ const EqCards = () => {
           latitude={eq.latitude}
           longitude={eq.longitude}
           depth={eq.depth}
-          magnitude={eq.magnitude}
-          place={eq.place}
+          intensity={eq.intensity}
+          region={eq.region}
           key={id}
         />
       ));
